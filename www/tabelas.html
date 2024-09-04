@@ -9,11 +9,10 @@
 
 <body>
 
+  <h1>Tabelas simples</h1>
+
   <table border="1">
     <thead>
-      <tr>
-        <th colspan="100">Notas dos alunos</th>
-      </tr>
       <tr>
         <th>Nome do aluno</th>
         <th>Nota 1</th>
@@ -38,14 +37,40 @@
         <td>6,5</td>
       </tr>
     </tbody>
-    <tfoot>
+  </table>
+
+  <hr />
+
+  <h1>Tabelas complexas</h1>
+
+  <table border="1">
+    <tbody>
       <tr>
-        <td>Situacao</td>
-        <td colspan="100">
-          Semestre fechado
-        </td>
+        <td rowspan="3">Nome</td>
+        <td>1</td>
       </tr>
-    </tfoot>
+      <tr>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>Tabelas complexas</h1>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td colspan="3">Nome</td>
+      </tr>
+    </tbody>
   </table>
 
 </body>
