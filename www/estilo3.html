@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilo 3</title>
+  <style>
+    div {
+      border: 1px solid black;
+      border-radius: 40px;
+      height: 80px;
+      width: 80px;
+      margin-bottom: 4px;
+    }
+
+    #sinal {
+      right: 12px;
+      border: 1px solid black;
+      background-color: black;
+      border-radius: 8px;
+      height: 320px;
+      width: 120px;
+      /* 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      */
+    }
+
+    #vermelho {
+      background-color: red;
+    }
+
+    #amarelo {
+      background-color: orange;
+    }
+
+    #verde {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="sinal">
+    <div id="vermelho"></div>
+    <div id="amarelo"></div>
+    <div id="verde"></div>
+  </div>
+
+  <div style="width: auto; height: auto; border-radius: 4px; text-align: justify;">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quasi deleniti adipisci ratione laboriosam, quis
+    consequuntur ad illum, temporibus incidunt enim maxime, animi fugiat debitis explicabo commodi cupiditate porro
+    beatae.
+  </div>
+
+  <div
+    style="width: 100%; height: 100%; position: absolute; top: 0; border-radius: 4px; background-color: rgba(255,0,0,0.5); z-index: 9999;">
+    sou uma mensagem sobreposta
+  </div>
+
+</body>
+
+</html>
