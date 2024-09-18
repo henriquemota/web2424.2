@@ -8,3 +8,4 @@ Semestre 2024.2
 ## Algumas fontes de referência
 
 - https://developer.mozilla.org/pt-BR/docs/Web/HTML
+- https://developer.mozilla.org/pt-BR/docs/Web/CSS
