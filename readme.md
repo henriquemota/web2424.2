@@ -14,4 +14,6 @@ Semestre 2024.2
 
 ## Alguns livros
 
+- https://github.com/free-educa/books/blob/main/books/Html5_e_css3_domine_a_web_do_futuro_fran%20(1).pdf
+- https://github.com/free-educa/books/blob/main/books/CSS%20Eficiente.pdf
 - https://github.com/free-educa/books/blob/main/books/JavaScript%20O%20Guia%20Definitivo_v2.pdf
