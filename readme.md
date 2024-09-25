@@ -11,6 +11,7 @@ Semestre 2024.2
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS
 - https://react.dev/learn
 - https://vitejs.dev/
+- https://getbootstrap.com
 
 ## Alguns livros
 
