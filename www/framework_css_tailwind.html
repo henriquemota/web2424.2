@@ -5,10 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Framework CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script> 
+  -->
 </head>
 
 <body>
+  <h1 class="bg-indigo-500">Tailwind Exemplo</h1>
+  <p class="bg-[#f35654]">Tailwind Exemplo</p>
+  <button class="bg-cyan-500 hover:bg-cyan-600 p-2">Eu sou um botao</button>
 
+
+  <div class="grid grid-cols-12">
+    <div class="col-span-2">01</div>
+    <div class="col-span-2">02</div>
+    <div class="">03</div>
+    <div class="col-span-2">04</div>
+    <div class="">05</div>
+    <div class="">06</div>
+    <div class="">07</div>
+    <div class="">08</div>
+    <div class="">09</div>
+    <div class="">10</div>
+    <div class="">11</div>
+    <div class="">12</div>
+  </div>
 </body>
 
 </html>
