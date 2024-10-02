@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply h-screen w-full flex flex-col justify-center items-center
+}
+.title {
+  @apply font-bold text-gray-600 text-[1.8rem]
+}
+.label {
+  @apply my-2 text-2xl
+}
+.textinput {
+  @apply border border-gray-500 rounded-lg p-2
+}
+.button {
+  @apply bg-slate-500 hover:bg-slate-400 rounded-md text-white p-2 m-2 my-4
+}
