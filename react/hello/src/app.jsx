@@ -1,10 +1,13 @@
 function App() {
 	return (
-		<div>
-			<h1 className='bg-info'>Bem vindo ao ReactJS</h1>
-			<button className='btn btn-success'>botao aqui</button>
-			<button className='btn btn-danger'>botao aqui</button>
-		</div>
+		<section>
+			<h1>Bem vindo ao React</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia laudantium, voluptates eligendi error
+				temporibus aperiam in quo harum quas explicabo maiores velit, numquam deleniti ducimus neque assumenda!
+				Molestiae, repellendus?
+			</p>
+		</section>
 	)
 }
 
