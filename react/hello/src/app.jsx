@@ -29,7 +29,9 @@ function App() {
 					id='peso'
 					type='text'
 					className='textinput'
-					onChange={({ target }) => setDados({ ...dados, peso: target.value ? Number(target.value) : 0 })}
+					onChange={function ({ target }) {
+						setDados({ ...dados, peso: target.value ? Number(target.value) : 0 })
+					}}
 				/>
 			</div>
 			<div className='flex flex-col w-[200px]'>
@@ -40,7 +42,9 @@ function App() {
 					id='altura'
 					type='text'
 					className='textinput'
-					onChange={({ target }) => setDados({ ...dados, altura: target.value ? Number(target.value) : 0 })}
+					onChange={function ({ target }) {
+						setDados({ ...dados, altura: target.value ? Number(target.value) : 0 })
+					}}
 				/>
 			</div>
 			<button className='button' onClick={calcularIMC}>
