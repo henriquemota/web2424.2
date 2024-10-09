@@ -12,6 +12,7 @@ Semestre 2024.2
 - https://react.dev/learn
 - https://vitejs.dev/
 - https://getbootstrap.com
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array (Material sobre Array JavaScript)
 
 ## Alguns livros
 
