@@ -1,48 +1,41 @@
-import { useEffect, useState } from 'react'
-import { alunos } from './data'
-
 function App() {
-	const [data, setData] = useState([])
+	// // filter
+	// const x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	// console.log(x)
 
-	useEffect(() => {
-		setData(alunos)
-	}, [])
+	// const pares = x.filter((e) => e % 2 === 0)
+	// console.log(pares)
+	// const impares = x.filter((e) => e % 2 !== 0)
+	// console.log(impares)
 
-	return (
-		<main className='p-4'>
-			<h1 className=''>Lista de alunos</h1>
+	// const dados = [
+	// 	{ id: 1, nome: 'joao', idade: 20 },
+	// 	{ id: 2, nome: 'maria', idade: 18 },
+	// 	{ id: 3, nome: 'pedro', idade: 20 },
+	// 	{ id: 4, nome: 'ana', idade: 21 },
+	// ]
 
-			<input
-				className='p-2 border border-gray-300 rounded-lg m-1'
-				type='search'
-				placeholder='filtre seus dados aqui'
-				onChange={({ target: { value } }) => {
-					value ? setData(alunos.filter((m) => m.nome.includes(value))) : setData(alunos)
-				}}
-			/>
+	// console.log(dados)
 
-			<table className='border border-gray-600 w-full my-4'>
-				<thead>
-					<tr className='border border-gray-600'>
-						<th>Nome</th>
-						<th>AV1</th>
-						<th>AV2</th>
-						<th>AV3</th>
-					</tr>
-				</thead>
-				<tbody>
-					{data.map((el, ix) => (
-						<tr key={ix} className='border border-gray-600'>
-							<td>{el.nome}</td>
-							<td className='text-center'>{el.av1.toFixed(1)}</td>
-							<td className='text-center'>{el.av2.toFixed(1)}</td>
-							<td className='text-center'>{el.av3.toFixed(1)}</td>
-						</tr>
-					))}
-				</tbody>
-			</table>
-		</main>
-	)
+	// const frases = dados.map((e) => `Bem vindo ${e.nome}, sua idade é ${e.idade} anos?`)
+	// console.log(frases)
+
+	// const maioresDeIdade = dados.filter((e) => e.idade >= 18)
+	// console.log(maioresDeIdade)
+
+	// const pessoa = dados.find((e) => e.id === 20)
+	// console.log(pessoa)
+
+	// const notas = [8, 7, 5, 6, 4, 3, 5]
+	// const total = notas.reduce((p, c) => p + c, 0)
+	// const media = total / notas.length
+
+	// console.log(total, media.toFixed(1))
+
+	const dados = 'bem vindo ao mundo de array javascript'
+	console.log(dados.includes('mundo'))
+
+	return <main></main>
 }
 
 export default App
