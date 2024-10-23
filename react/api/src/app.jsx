@@ -1,5 +1,7 @@
 import axios from 'axios'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import Endereco from './endereco'
+import Mapa from './mapa'
 
 function App() {
 	const [cep, setCEP] = useState('')
@@ -12,6 +14,7 @@ function App() {
 				setEndereco(data)
 			} else setEndereco(null)
 		} catch (error) {
+			alert('Endereço não localizado')
 			setEndereco(null)
 		}
 	}
@@ -32,11 +35,14 @@ function App() {
 			>
 				Pesquisar
 			</button>
-			{endereco && (
-				<section className='p-4 border border-gray-400 bg-gray-200'>
-					{endereco?.address}, {endereco?.district} - {endereco?.city} / {endereco?.state}
-				</section>
-			)}
+			{endereco && <Endereco endereco={endereco} />}
+			<Mapa
+				marcador={{
+					lat: endereco?.lat,
+					lng: endereco?.lng,
+					endereco: `${endereco?.address}, ${endereco?.district} - ${endereco?.city} / ${endereco?.state}`,
+				}}
+			/>
 		</main>
 	)
 }
