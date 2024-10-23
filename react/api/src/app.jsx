@@ -6,14 +6,18 @@ function App() {
 	const [endereco, setEndereco] = useState(null)
 
 	const buscaCEP = async () => {
-		if (cep.length === 8) {
-			const { data } = await axios.get('https://cep.awesomeapi.com.br/json/' + cep)
-			setEndereco(data)
+		try {
+			if (cep.length === 8) {
+				const { data } = await axios.get('https://cep.awesomeapi.com.br/json/' + cep)
+				setEndereco(data)
+			} else setEndereco(null)
+		} catch (error) {
+			setEndereco(null)
 		}
 	}
 
 	return (
-		<main className='h-screen p-4 w-full flex flex-col gap-4 justify-center items-center'>
+		<main className='h-screen w-full flex flex-col gap-4 justify-center items-center'>
 			<p className='text-3xl'>Informe seu CEP para buscar o endereço</p>
 			<input
 				type='tel'
@@ -28,7 +32,11 @@ function App() {
 			>
 				Pesquisar
 			</button>
-			<section className='w-screen p-4 border border-gray-400 bg-gray-200'>{JSON.stringify(endereco)}</section>
+			{endereco && (
+				<section className='p-4 border border-gray-400 bg-gray-200'>
+					{endereco?.address}, {endereco?.district} - {endereco?.city} / {endereco?.state}
+				</section>
+			)}
 		</main>
 	)
 }
