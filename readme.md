@@ -13,6 +13,7 @@ Semestre 2024.2
 - https://vitejs.dev/
 - https://getbootstrap.com
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array (Material sobre Array JavaScript)
+- https://reactrouter.com/en/main/start/tutorial (documentação do React Router Dom)
 
 ## Alguns livros
 
