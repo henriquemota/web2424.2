@@ -14,6 +14,8 @@ Semestre 2024.2
 - https://getbootstrap.com
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array (Material sobre Array JavaScript)
 - https://reactrouter.com/en/main/start/tutorial (documentação do React Router Dom)
+- https://developer.mozilla.org/pt-BR/docs/Glossary/PHP
+- https://www.php.net/
 
 ## Alguns livros
 
