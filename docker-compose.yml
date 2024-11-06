@@ -1,23 +1,28 @@
 services:
   apache:
-    image: 'php:7.2-apache'
+    # image: 'php:7.2-apache'
+    image: 'php:8-apache'
     container_name: php
     restart: always
     ports:
       - '80:80'
     volumes:
       - ./www/:/var/www/html
-    # depends_on:
-    #   - mysqldb
-    # links:
-    #   - mysqldb   
+    depends_on:
+      - mysqldb
+    links:
+      - mysqldb   
 
-  # mysqldb:
-  #   container_name: mysqlASW
-  #   image: mysql:5.7
-  #   restart: always
-  #   ports:
-  #     - '3307:3306'
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=root 
-  #     - MYSQL_DATABASE=biblioteca
+  mysqldb:
+    container_name: mysql
+    image: mysql:8.0
+    restart: always
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./data:/var/lib/mysql      
+    environment:
+      MYSQL_ROOT_PASSWORD: senha
+      MYSQL_DATABASE: estacio
+      MYSQL_USER: estacio
+      MYSQL_PASSWORD: senha
