@@ -2,6 +2,8 @@ services:
   apache:
     # image: 'php:7.2-apache'
     image: 'php:8-apache'
+    networks:
+      - my-network
     container_name: php
     restart: always
     ports:
@@ -16,6 +18,8 @@ services:
   mysqldb:
     container_name: mysql
     image: mysql:8.0
+    networks:
+      - my-network
     restart: always
     ports:
       - '3306:3306'
@@ -26,3 +30,19 @@ services:
       MYSQL_DATABASE: estacio
       MYSQL_USER: estacio
       MYSQL_PASSWORD: senha
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    networks:
+      - my-network
+    container_name: phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root_password
+    depends_on:
+      - mysqldb      
+
+networks:
+  my-network:      
